@@ -9,6 +9,6 @@ namespace AppCadastro
         public static string Username = "admin";
         public static string Password = "1234";
 
-        public static string base_url = "http://localhost/api_ci/api/";
+        public static string base_url = "http://172.25.96.1/api_ci/api/";
     }
 }

@@ -17,11 +17,11 @@
                 FontSize="Large"
                 TextColor="purple"/>
             <Entry x:Name="etUser"
-                Placeholder="Informe o usúario"
+                Placeholder="Informe o E-mail"
                 TextColor="Black"
                 VerticalOptions="EndAndExpand" 
                 HorizontalOptions="CenterAndExpand" 
-                WidthRequest="150"
+                WidthRequest="250"
                 HorizontalTextAlignment="Center"/>
             <Entry x:Name="etPassword"
                 Placeholder="Informe a Senha"
@@ -29,7 +29,7 @@
                 TextColor="Black"
                 VerticalOptions="Start" 
                 HorizontalOptions="CenterAndExpand"
-                WidthRequest="150"
+                WidthRequest="250"
                 HorizontalTextAlignment="Center"/>
             <Button x:Name="BtLogin"
                 Text="Login"

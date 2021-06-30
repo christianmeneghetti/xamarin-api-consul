@@ -36,10 +36,10 @@ namespace AppCadastro.API
                     {
                         try
                         {
-                            return JsonConvert.DeserializeObject<List<Cliente>>(
-                                await new StreamReader(responseStream)
-                                   .ReadToEndAsync().ConfigureAwait(false));
-
+                            HttpClient client = new HttpClient();
+                            string resposta = await client.GetStringAsync(urlclie);
+                            List<Cliente> cliente = JsonConvert.DeserializeObject<List<Cliente>>(resposta);
+                            return cliente;
                         }
                         catch (Exception e)
                         {
@@ -52,7 +52,7 @@ namespace AppCadastro.API
 
             catch (Exception e)
             {
-
+                Console.WriteLine(e);
             }
 
             return new List<Cliente>();
